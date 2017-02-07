@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstAddressPickViewController">
+            <connections>
+                <outlet property="addressLabel" destination="utj-wu-VHV" id="hPq-Jb-Rhk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择地点：" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fft-2q-yc0">
+                    <rect key="frame" x="0.0" y="164" width="112" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="JyJ-bi-ifS"/>
+                        <constraint firstAttribute="width" constant="112" id="ycp-tJ-Hex"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择省/市/区" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utj-wu-VHV">
+                    <rect key="frame" x="112" y="164" width="263" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="5gV-Tz-oko"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.79601675271987915" green="0.79611307382583618" blue="0.79598397016525269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKk-lv-OAi">
+                    <rect key="frame" x="112" y="164" width="263" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="QHC-pl-HOU"/>
+                    </constraints>
+                    <connections>
+                        <action selector="selectAdress:" destination="-1" eventType="touchUpInside" id="sPJ-Gd-5Ir"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90581274030000003" green="0.90592151880000005" blue="0.90577572579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="utj-wu-VHV" secondAttribute="trailing" id="2G6-Ro-zro"/>
+                <constraint firstItem="aKk-lv-OAi" firstAttribute="leading" secondItem="Fft-2q-yc0" secondAttribute="trailing" id="6Tt-Ab-wq9"/>
+                <constraint firstItem="Fft-2q-yc0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="GLe-3K-Vo6"/>
+                <constraint firstItem="Fft-2q-yc0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="LW1-ri-LH2"/>
+                <constraint firstItem="utj-wu-VHV" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="Pxj-NZ-tiy"/>
+                <constraint firstItem="aKk-lv-OAi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="164" id="ScG-Zs-B3z"/>
+                <constraint firstAttribute="trailing" secondItem="aKk-lv-OAi" secondAttribute="trailing" id="ddE-gd-dhv"/>
+                <constraint firstItem="utj-wu-VHV" firstAttribute="leading" secondItem="Fft-2q-yc0" secondAttribute="trailing" id="gTj-aB-6wD"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>

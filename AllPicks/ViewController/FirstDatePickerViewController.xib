@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FirstDatePickerViewController">
+            <connections>
+                <outlet property="timeLabel" destination="7ml-Q7-FvJ" id="bn4-iW-UJy"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="定时发送" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ml-Q7-FvJ">
+                    <rect key="frame" x="0.0" y="172" width="375" height="55"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="adv-Gm-G97"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sXb-Y7-cZ8">
+                    <rect key="frame" x="0.0" y="172" width="375" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="91L-1K-PYa"/>
+                    </constraints>
+                    <connections>
+                        <action selector="timeBtnClick:" destination="-1" eventType="touchUpInside" id="kuJ-w7-3rH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.90581274030000003" green="0.90592151880000005" blue="0.90577572579999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7ml-Q7-FvJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6un-2F-Pib"/>
+                <constraint firstItem="sXb-Y7-cZ8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Ol1-tW-hpm"/>
+                <constraint firstItem="sXb-Y7-cZ8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="PwT-FW-L1o"/>
+                <constraint firstAttribute="trailing" secondItem="7ml-Q7-FvJ" secondAttribute="trailing" id="R3v-QK-gsc"/>
+                <constraint firstItem="7ml-Q7-FvJ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="e0s-jD-HSY"/>
+                <constraint firstAttribute="trailing" secondItem="sXb-Y7-cZ8" secondAttribute="trailing" id="hKi-Fa-34l"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="52.5"/>
+        </view>
+    </objects>
+</document>
