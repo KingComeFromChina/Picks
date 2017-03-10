@@ -23,6 +23,8 @@
 		3C7614191E4963D8003EDC2F /* WLDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7614181E4963D8003EDC2F /* WLDatePickerView.m */; };
 		3C76141D1E496438003EDC2F /* FirstDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C76141B1E496438003EDC2F /* FirstDatePickerViewController.m */; };
 		3C76141E1E496438003EDC2F /* FirstDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3C76141C1E496438003EDC2F /* FirstDatePickerViewController.xib */; };
+		9B69A1081E72AEEE006D33BD /* NNEPickerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B69A1061E72AEEE006D33BD /* NNEPickerTableViewCell.m */; };
+		9B69A1091E72AEEE006D33BD /* NNEPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B69A1071E72AEEE006D33BD /* NNEPickerTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,9 @@
 		3C76141A1E496438003EDC2F /* FirstDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstDatePickerViewController.h; sourceTree = "<group>"; };
 		3C76141B1E496438003EDC2F /* FirstDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstDatePickerViewController.m; sourceTree = "<group>"; };
 		3C76141C1E496438003EDC2F /* FirstDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirstDatePickerViewController.xib; sourceTree = "<group>"; };
+		9B69A1051E72AEEE006D33BD /* NNEPickerTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NNEPickerTableViewCell.h; sourceTree = "<group>"; };
+		9B69A1061E72AEEE006D33BD /* NNEPickerTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NNEPickerTableViewCell.m; sourceTree = "<group>"; };
+		9B69A1071E72AEEE006D33BD /* NNEPickerTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NNEPickerTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +181,9 @@
 				3C7614181E4963D8003EDC2F /* WLDatePickerView.m */,
 				3C7614101E486F51003EDC2F /* AddressPickView.h */,
 				3C7614111E486F51003EDC2F /* AddressPickView.m */,
+				9B69A1051E72AEEE006D33BD /* NNEPickerTableViewCell.h */,
+				9B69A1061E72AEEE006D33BD /* NNEPickerTableViewCell.m */,
+				9B69A1071E72AEEE006D33BD /* NNEPickerTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -316,6 +324,7 @@
 				3C7614141E487099003EDC2F /* Address.plist in Resources */,
 				3C7613D51E485C49003EDC2F /* Assets.xcassets in Resources */,
 				3C76141E1E496438003EDC2F /* FirstDatePickerViewController.xib in Resources */,
+				9B69A1091E72AEEE006D33BD /* NNEPickerTableViewCell.xib in Resources */,
 				3C7614091E4866AB003EDC2F /* FirstAddressPickViewController.xib in Resources */,
 				3C7614161E48709F003EDC2F /* citys.plist in Resources */,
 			);
@@ -345,6 +354,7 @@
 				3C7614031E485C97003EDC2F /* ViewController.m in Sources */,
 				3C7614021E485C97003EDC2F /* AppDelegate.m in Sources */,
 				3C76140F1E486F25003EDC2F /* UIViewExt.m in Sources */,
+				9B69A1081E72AEEE006D33BD /* NNEPickerTableViewCell.m in Sources */,
 				3C7614081E4866AB003EDC2F /* FirstAddressPickViewController.m in Sources */,
 				3C7614121E486F51003EDC2F /* AddressPickView.m in Sources */,
 				3C76141D1E496438003EDC2F /* FirstDatePickerViewController.m in Sources */,
@@ -573,6 +583,7 @@
 				3C7613F41E485C49003EDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7613F51E485C49003EDC2F /* Build configuration list for PBXNativeTarget "AllPicksTests" */ = {
 			isa = XCConfigurationList;
@@ -581,6 +592,7 @@
 				3C7613F71E485C49003EDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C7613F81E485C49003EDC2F /* Build configuration list for PBXNativeTarget "AllPicksUITests" */ = {
 			isa = XCConfigurationList;
@@ -589,6 +601,7 @@
 				3C7613FA1E485C49003EDC2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
